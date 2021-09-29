@@ -1,0 +1,160 @@
+\input{Configuraciones/paquetes}
+
+%--------------------------
+
+\begin{document}
+\input{Configuraciones/nombres}
+%--------------------------
+\textbf{Problema:} Incumplimiento de pago de tarjetas de crédito.
+\section{Situación problemática}
+
+La situación se basa en un caso particular: el promedio de deuda en Estados Unidos ha ido en tendencia bajista durante el 2020. Dado este contexto, se busca encontrar una manera de predecir los clientes que caerán en impagos de su tarjeta de crédito basado en sus características particulares que incluyen cosas como: género, estado civil, edad, pagos, etcétera. 
+\section{Problema científico}
+La situación se resolverá con datos de clientes de Taiwán y se intentará hacer un símil con los clientes de Estados Unidos que son usuarios de tarjetas de crédito, lo que podría generar un modelo que no se adecue correctamente a los datos estadounidenses debido a las barreras culturales y sociales. Por otra parte, el problema científico principal podría ser determinar un modelo que se ajuste de forma precisa a los datos y arroje resultados fidedignos; los cuales podrían ser obtenidos con una red neuronal, tentativamente. 
+\section{Objetivos}
+\subsection{General}
+Crear un modelo que determine, basado en características de los clientes, la tendencia a caer en impagos a deudas de tarjetas de crédito.  
+\subsection{Específicos}
+\begin{enumerate}
+	\item Medir las características necesarias e innecesarias de los clientes a la hora de caer en impagos de sus tarjetas de crédito.
+	\item Comprobar las relaciones entre variables de los clientes que caen en impagos de su tarjeta de débito. 
+\end{enumerate}
+\section{Descripción de los datos}
+Descripción original de los datos: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Images/1}
+\end{figure}
+Estadísticas de los datos luego de la limpieza: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/2}
+\end{figure}
+
+\subsection{Descripciones individuales}
+\begin{cajita}
+	Todas las operaciones de limpieza fueron ejecutadas automáticamente por medio de QuickDA: duplicados, nulos y tipo de varibles. 
+\end{cajita}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/3}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/4}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/5}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/6}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/7}
+\end{figure}\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Images/8}
+\end{figure}\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Images/9}
+\end{figure}\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Images/10}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/11}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/12}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/13}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/14}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/15}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/16}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/17}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/18}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/19}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/20}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/21}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/22}
+\end{figure}\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Images/23}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/24}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/25}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/26}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Images/27}
+\end{figure}
+
+
+\section{Análisis exploratorio}
+
+El análisis exploratorio (explicado) puede ser encontrado  al final de este archivo.
+\section{Hallazgos y conclusiones}
+
+\subsection{Resumen hallazgos}
+El resumen de hallazgos puede ser encontrado en la sección de «análisis específicos» del \textit{Jupyter Notebook} adjuntado. 
+
+\subsection{Conclusiones}
+
+\begin{enumerate}
+	\item Se determinaron nuevas subvariables para varias variables ya preexistentes con el propósito de dar una mejor perspectiva a los datos; como en el caso de la edad, para tener una distribución por edades. 
+	\item  Se cruzaron varias variables para determinar sus relaciones y su implicación directa con la cantidad de crédito otorgado; para entender a mayor profundidad y dar una perspectiva intuitiva acerca de los datos. 
+	\item Se comprobó el estado de los datos para determinar datos atípicos, duplicados y datos nulos; los cuales ayudarán a obtener mejores resultados en el modelo. 
+\end{enumerate}
+
+
+\includepdf[pages=-]{Images/AE.pdf}
+
+%---------------------------
+\bibliographystyle{apa}
+\bibliography{referencias.bib}
+
+\end{document}
